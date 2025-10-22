@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    max-width: 33.125rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.header p {
+    max-width: 35.938rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    
+}
+
+.content-container {
+    padding: 1.5rem;
+    background-color: #F3F4F6;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+.card-container {
+    box-shadow: 19px 1px 10px 0px rgba(34,60,80,0.3);
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.card_title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.75rem;
+}
+
+.card_text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #52525a;
+    margin-bottom: 1.5rem;
+}
+
+.card_img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.last-card {
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    grid-column: span 3;
+    justify-content: space-between;
+}
+
+.last-card .card-container {
+   margin-right: 24px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.last-card .card_img {
+    max-width: 55%;
+    max-height: 100%;
+}
+
+.last-card .card-info {
+    margin: 0;
+    margin-right: 0px;
+    margin-right: 1.5rem;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .page-wrapper {
+        padding: 1rem;
+    }
+
+    .header h1{
+        width: 100%;
+        max-width: none;
+    }
+    
+    .header p {
+        width: 100%;
+        max-width: none;
+    
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .last-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:inherit;
+        padding: 0;
+    }
+
+    .last-card .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .last-card .card_img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        vertical-align: top;
+    }
+
+    .last-card .card-info {
+        width: 100%;
+    }
+}
