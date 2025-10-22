@@ -11,7 +11,7 @@ You can use any tools or resources you like to complete this challenge. Each cha
 If you need help or have any questions, feel free to [join our community](https://github.com/orgs/devchallenges-io/discussions) and ask for support.
 
 ## Overview
-This project is a responsive FAQ web page built as part of the devChallenges.io Simple FAQ challenge. 
+This project is a responsive bentobox feature section web page built as part of the devChallenges.io bentobox feature section challenge. 
 
 ![Desktop_1350px](https://github.com/user-attachments/assets/86c82953-0e3e-4795-ac53-77d4ba64481a)
 
